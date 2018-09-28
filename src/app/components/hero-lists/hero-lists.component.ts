@@ -10,9 +10,14 @@ export class HeroListsComponent implements OnInit {
           {'id':13,'name':"Mr. Nice"},
           {'id':14,'name':"Mr. Nice"},
           {'id':15,'name':"Mr. Nice"}
-        ]
+        ];
+    selectedHero:Object;
   constructor() { }
-
+  onSelect(hero){
+    console.log(hero);
+    this.selectedHero=hero;
+    
+  }
   ngOnInit() {
   }
 

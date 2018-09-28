@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  hero:object={'id':15,'name':''}
+  hero:Object={'id':15,'name':'Lisa'}
+
   constructor() { }
 
   ngOnInit() {
+    console.log(this.hero);
   }
 
 }
