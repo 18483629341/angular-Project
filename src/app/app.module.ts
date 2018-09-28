@@ -8,17 +8,21 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { HeroHomeComponent } from './components/hero-home/hero-home.component';
 import { HeroListsComponent } from './components/hero-lists/hero-lists.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroDetailComponent,
     HeroHomeComponent,
-    HeroListsComponent
+    HeroListsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
