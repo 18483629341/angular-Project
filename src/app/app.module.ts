@@ -16,8 +16,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 const appRoutes:Routes=[
   //  {path:'',component:HeroHomeComponent},
    {path:'home',component:HeroHomeComponent},
-   {path:'detail',component:HeroHomeComponent},
-   {path:'lists',component:HeroHomeComponent},
+   {path:'detail',component:HeroDetailComponent},
+   {path:'lists',component:HeroListsComponent},
    
 ]
 @NgModule({
@@ -33,7 +33,7 @@ const appRoutes:Routes=[
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
