@@ -16,7 +16,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 const appRoutes:Routes=[
   //  {path:'',component:HeroHomeComponent},
    {path:'home',component:HeroHomeComponent},
-   {path:'detail',component:HeroDetailComponent},
+   {path:'detail/:id',component:HeroDetailComponent},
    {path:'lists',component:HeroListsComponent},
    
 ]

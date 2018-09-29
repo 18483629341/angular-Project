@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-hero-home',
   templateUrl: './hero-home.component.html',
