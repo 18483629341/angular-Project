@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
+//import { Observable } from 'rxjs/Observable';
 //import { Http } from '@angular/http';
-//import { observable } from 'rxjs/observable';
+
 //import 'rxjs/add/operator/map';
 
 @Injectable({
@@ -8,7 +9,8 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
   heroes:Object[];
-  constructor( /*public http:Http*/) {
+  data:Observable<Array<number>>;
+  constructor(/* public http:Http*/) {
     this.heroes=[{'id':12,'name':"Mr. Nice"},
           {'id':13,'name':"Mr. Nice"},
           {'id':14,'name':"Mr. Nice"},
@@ -16,8 +18,20 @@ export class UserService {
         ];
     }
     getSingleUser(id){
+       // return this.heroes;
+      /* this.data=new Observable(observe=>{
+            setTimeout(observe=>observe.next(1),1000);
+            setTimeout(observe=>observe.next(2),2000);
+            setTimeout(observe=>observe.next(3),3000);
+            setTimeout(observe=>observe.complete(),4000);
+
+
+       })
+       return this.data;
+       */
         //return this.http.get("http://jsonplaceholder.typicode.com/users/"+id)
                       //  .map(res=>res.json());
+                        
     }
     //老师课件内容start
     /*getUsers(){
